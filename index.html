@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zafran Kitchen | مطبخ زعفران</title>
+<title>Saffroon Kitchen | مطبخ زعفرون</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -181,12 +181,6 @@
     background: linear-gradient(135deg, var(--bg-card) 0%, rgba(232,168,73,0.08) 100%);
   }
 
-  .card-emoji {
-    font-size: 2.4rem;
-    margin-bottom: 12px;
-    display: block;
-  }
-
   .card-name {
     font-weight: 700;
     font-size: 1.05rem;
@@ -331,7 +325,6 @@
     to { opacity: 1; transform: translateX(0); }
   }
 
-  .cart-item-emoji { font-size: 1.8rem; }
   .cart-item-info { flex: 1; }
   .cart-item-name { font-weight: 600; font-size: 0.95rem; }
   .cart-item-price { font-size: 0.85rem; color: var(--accent); margin-top: 2px; }
@@ -423,7 +416,7 @@
 <body>
 
 <header>
-  <div class="brand" id="brandName">Zafran Kitchen</div>
+  <div class="brand" id="brandName">Saffroon Kitchen</div>
   <div class="header-actions">
     <button class="lang-toggle" id="langBtn" onclick="toggleLang()">عربي</button>
     <button class="cart-btn" id="cartBtn" onclick="openDrawer()">
@@ -469,40 +462,40 @@ const menu = {
     en: "Starters",
     ar: "المقبلات",
     items: [
-      { id: "s1", emoji: "🥣", en: "Lentil Soup", ar: "شوربة عدس", descEn: "Warm spiced red lentil soup with crispy croutons", descAr: "شوربة عدس أحمر بالبهارات مع خبز محمّص", price: 22 },
-      { id: "s2", emoji: "🧆", en: "Falafel Plate", ar: "طبق فلافل", descEn: "Crispy chickpea falafel with tahini & pickles", descAr: "فلافل مقرمشة مع طحينة ومخللات", price: 28 },
-      { id: "s3", emoji: "🥗", en: "Fattoush Salad", ar: "سلطة فتوش", descEn: "Fresh greens with pomegranate & sumac dressing", descAr: "خضروات طازجة مع دبس الرمان والسماق", price: 26 },
-      { id: "s4", emoji: "🫕", en: "Hummus Trio", ar: "حمص ثلاثي", descEn: "Classic, roasted pepper & garlic hummus", descAr: "حمص كلاسيكي وبالفلفل المشوي والثوم", price: 30 },
+      { id: "s1", en: "Lentil Soup", ar: "شوربة عدس", descEn: "Warm spiced red lentil soup with crispy croutons", descAr: "شوربة عدس أحمر بالبهارات مع خبز محمّص", price: 22 },
+      { id: "s2", en: "Falafel Plate", ar: "طبق فلافل", descEn: "Crispy chickpea falafel with tahini & pickles", descAr: "فلافل مقرمشة مع طحينة ومخللات", price: 28 },
+      { id: "s3", en: "Fattoush Salad", ar: "سلطة فتوش", descEn: "Fresh greens with pomegranate & sumac dressing", descAr: "خضروات طازجة مع دبس الرمان والسماق", price: 26 },
+      { id: "s4", en: "Hummus Trio", ar: "حمص ثلاثي", descEn: "Classic, roasted pepper & garlic hummus", descAr: "حمص كلاسيكي وبالفلفل المشوي والثوم", price: 30 },
     ]
   },
   mains: {
     en: "Main Courses",
     ar: "الأطباق الرئيسية",
     items: [
-      { id: "m1", emoji: "🍖", en: "Lamb Ouzi", ar: "لحم أوزي", descEn: "Slow-roasted lamb shoulder with saffron rice", descAr: "كتف خروف مشوي ببطء مع أرز بالزعفران", price: 75 },
-      { id: "m2", emoji: "🐟", en: "Grilled Hammour", ar: "هامور مشوي", descEn: "Local hammour fillet with herb butter", descAr: "فيليه هامور محلي بالزبدة والأعشاب", price: 68 },
-      { id: "m3", emoji: "🍗", en: "Chicken Shawarma", ar: "شاورما دجاج", descEn: "Marinated chicken with garlic sauce & pickles", descAr: "دجاج متبل مع صوص الثوم والمخللات", price: 42 },
-      { id: "m4", emoji: "🥘", en: "Mixed Grill", ar: "مشاوي مشكلة", descEn: "Kebab, kofta, shish tawook & grilled veggies", descAr: "كباب وكفتة وشيش طاووق وخضار مشوية", price: 85 },
-      { id: "m5", emoji: "🧈", en: "Butter Chicken", ar: "دجاج بالزبدة", descEn: "Creamy tomato-based curry with basmati rice", descAr: "كاري بالطماطم الكريمي مع أرز بسمتي", price: 52 },
+      { id: "m1", en: "Lamb Ouzi", ar: "لحم أوزي", descEn: "Slow-roasted lamb shoulder with saffron rice", descAr: "كتف خروف مشوي ببطء مع أرز بالزعفران", price: 75 },
+      { id: "m2", en: "Grilled Hammour", ar: "هامور مشوي", descEn: "Local hammour fillet with herb butter", descAr: "فيليه هامور محلي بالزبدة والأعشاب", price: 68 },
+      { id: "m3", en: "Chicken Shawarma", ar: "شاورما دجاج", descEn: "Marinated chicken with garlic sauce & pickles", descAr: "دجاج متبل مع صوص الثوم والمخللات", price: 42 },
+      { id: "m4", en: "Mixed Grill", ar: "مشاوي مشكلة", descEn: "Kebab, kofta, shish tawook & grilled veggies", descAr: "كباب وكفتة وشيش طاووق وخضار مشوية", price: 85 },
+      { id: "m5", en: "Butter Chicken", ar: "دجاج بالزبدة", descEn: "Creamy tomato-based curry with basmati rice", descAr: "كاري بالطماطم الكريمي مع أرز بسمتي", price: 52 },
     ]
   },
   drinks: {
     en: "Drinks",
     ar: "المشروبات",
     items: [
-      { id: "d1", emoji: "🍊", en: "Fresh Orange Juice", ar: "عصير برتقال طازج", descEn: "Freshly squeezed, no sugar added", descAr: "عصير طازج بدون سكر مضاف", price: 18 },
-      { id: "d2", emoji: "🫖", en: "Moroccan Mint Tea", ar: "شاي مغربي بالنعناع", descEn: "Sweet green tea with fresh mint leaves", descAr: "شاي أخضر حلو بأوراق النعناع الطازجة", price: 14 },
-      { id: "d3", emoji: "🥤", en: "Mango Lassi", ar: "لسي مانجو", descEn: "Creamy yogurt mango smoothie", descAr: "سموذي مانجو باللبن الكريمي", price: 20 },
-      { id: "d4", emoji: "🍋", en: "Lemon Mint Cooler", ar: "ليمون بالنعناع", descEn: "Iced lemon with crushed mint & soda", descAr: "ليمون مثلج مع نعناع مهروس وصودا", price: 16 },
+      { id: "d1", en: "Fresh Orange Juice", ar: "عصير برتقال طازج", descEn: "Freshly squeezed, no sugar added", descAr: "عصير طازج بدون سكر مضاف", price: 18 },
+      { id: "d2", en: "Moroccan Mint Tea", ar: "شاي مغربي بالنعناع", descEn: "Sweet green tea with fresh mint leaves", descAr: "شاي أخضر حلو بأوراق النعناع الطازجة", price: 14 },
+      { id: "d3", en: "Mango Lassi", ar: "لسي مانجو", descEn: "Creamy yogurt mango smoothie", descAr: "سموذي مانجو باللبن الكريمي", price: 20 },
+      { id: "d4", en: "Lemon Mint Cooler", ar: "ليمون بالنعناع", descEn: "Iced lemon with crushed mint & soda", descAr: "ليمون مثلج مع نعناع مهروس وصودا", price: 16 },
     ]
   },
   desserts: {
     en: "Desserts",
     ar: "الحلويات",
     items: [
-      { id: "x1", emoji: "🍮", en: "Kunafa", ar: "كنافة", descEn: "Crispy shredded pastry with cheese & syrup", descAr: "كنافة مقرمشة بالجبنة والقطر", price: 32 },
-      { id: "x2", emoji: "🧁", en: "Pistachio Baklava", ar: "بقلاوة فستق", descEn: "Layers of filo, pistachio & rosewater syrup", descAr: "طبقات فيلو بالفستق وشراب ماء الورد", price: 28 },
-      { id: "x3", emoji: "🍨", en: "Saffron Ice Cream", ar: "آيس كريم زعفران", descEn: "House-made saffron & cardamom gelato", descAr: "جيلاتو زعفران وهيل منزلي الصنع", price: 24 },
+      { id: "x1", en: "Kunafa", ar: "كنافة", descEn: "Crispy shredded pastry with cheese & syrup", descAr: "كنافة مقرمشة بالجبنة والقطر", price: 32 },
+      { id: "x2", en: "Pistachio Baklava", ar: "بقلاوة فستق", descEn: "Layers of filo, pistachio & rosewater syrup", descAr: "طبقات فيلو بالفستق وشراب ماء الورد", price: 28 },
+      { id: "x3", en: "Saffron Ice Cream", ar: "آيس كريم زعفران", descEn: "House-made saffron & cardamom gelato", descAr: "جيلاتو زعفران وهيل منزلي الصنع", price: 24 },
     ]
   }
 };
@@ -515,7 +508,7 @@ const WHATSAPP_NUMBER = "5511952136848";
 
 // ── i18n ──
 const t = {
-  brand:      { en: "Zafran Kitchen", ar: "مطبخ زعفران" },
+  brand:      { en: "Saffroon Kitchen", ar: "مطبخ زعفرون" },
   heroTitle:  { en: "Flavours That Tell a Story", ar: "نكهات تحكي قصة" },
   heroSub:    { en: "Handcrafted dishes inspired by the spice routes. Pick your favourites and order straight to our kitchen via WhatsApp.",
                 ar: "أطباق مصنوعة بعناية مستوحاة من طرق التوابل. اختر أطباقك المفضلة واطلب مباشرة عبر واتساب." },
@@ -558,7 +551,6 @@ function renderMenu() {
       };
 
       card.innerHTML = `
-        <span class="card-emoji">${item.emoji}</span>
         <div class="card-name">${lang === "en" ? item.en : item.ar}</div>
         <div class="card-desc">${lang === "en" ? item.descEn : item.descAr}</div>
         <div class="card-bottom">
@@ -673,7 +665,6 @@ function renderDrawer() {
     const row = document.createElement("div");
     row.className = "cart-item";
     row.innerHTML = `
-      <span class="cart-item-emoji">${item.emoji}</span>
       <div class="cart-item-info">
         <div class="cart-item-name">${lang === "en" ? item.en : item.ar}</div>
         <div class="cart-item-price">${item.price * qty} ${t.currency[lang]}</div>
@@ -707,23 +698,23 @@ function sendToWhatsApp() {
 
   let lines = [];
   if (lang === "en") {
-    lines.push("🧾 *New Order from Zafran Kitchen*\n");
+    lines.push("*New Order from Saffroon Kitchen*\n");
   } else {
-    lines.push("🧾 *طلب جديد من مطبخ زعفران*\n");
+    lines.push("*طلب جديد من مطبخ زعفرون*\n");
   }
 
   for (const [id, qty] of entries) {
     const item = findItem(id);
     if (!item) continue;
     const name = lang === "en" ? item.en : item.ar;
-    lines.push(`${item.emoji} ${name} × ${qty} — ${item.price * qty} ${t.currency[lang]}`);
+    lines.push(`- ${name} x${qty} — ${item.price * qty} ${t.currency[lang]}`);
   }
 
   lines.push("");
   if (lang === "en") {
-    lines.push(`💰 *Total: ${getTotal()} AED*`);
+    lines.push(`*Total: ${getTotal()} AED*`);
   } else {
-    lines.push(`💰 *المجموع: ${getTotal()} د.إ*`);
+    lines.push(`*المجموع: ${getTotal()} د.إ*`);
   }
 
   const text = encodeURIComponent(lines.join("\n"));
